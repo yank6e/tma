@@ -44,6 +44,10 @@
         <a href="order.html"><div class="sidebar-function">
             <h3>Заказы</h3>
         </div></a>
+
+        <a href="korzina.html"><div class="sidebar-function"> 
+            <h3>Корзина</h3> 
+        </div></a>
     </div>
     <main>
         <div class="card">
@@ -52,6 +56,16 @@
                 <h2>Кола</h2>
                 <p>170</p>
                 <p>Популярность</p>
+                <form action="add_to_cart.php" method="POST">
+                    <div class="quantity-control">
+                        <button type="button" class="decrease-btn">-</button>
+                        <input type="number" name="quantity" class="quantity" value="1" min="1">
+                        <button type="button" class="increase-btn">+</button>
+                    </div>
+                    <input type="hidden" name="product_name" value="Кола">
+                    <input type="hidden" name="product_price" value="170">
+                    <button type="submit" class="add-to-cart-btn">Добавить в корзину</button>
+                </form>
                 <div class="rating">
                     <span class="star">&#9733;</span>
                     <span class="star">&#9733;</span>
