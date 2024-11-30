@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Напитик</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div class="profile-icon">
+            <img src="img/profile.png" alt="Profile">
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <a href="index.html"><div class="sidebar-function">
+            <h3>Главная страница</h3>
+        </div></a>
+
+        <a href="drink.html"><div class="sidebar-content">
+            <h2>НАПИТКИ</h2>
+            <img src="img/drinks.jpg" alt="Напитки">
+        </div></a>
+
+        <a href="salat.html"><div class="sidebar-content">
+            <h2>САЛАТЫ</h2>
+            <img src="img/salat.jpg" alt="САЛАТЫ">
+        </div></a>
+
+        <a href="hot.html"><div class="sidebar-content">
+            <h2>ГОРЯЧЕЕ</h2>
+            <img src="img/meet.png" alt="ГОРЯЧЕЕ">
+        </div></a>
+
+        <a href="order.html"><div class="sidebar-function">
+            <h3>Заказы</h3>
+        </div></a>
+
+        <a href="korzina.html"><div class="sidebar-function"> 
+            <h3>Корзина</h3> 
+        </div></a>
+    </div>
+    <main>
+        <div class="card">
+            <div class="image-placeholder"></div>
+            <div class="details">
+                <h2>Кола</h2>
+                <p>170</p>
+                <p>Популярность</p>
+                <!-- часть работы с сервером -->
+                <form action="add_to_cart.php" method="POST">
+                    <div class="quantity-control">
+                        <button type="button" class="decrease-btn">-</button>
+                        <input type="number" name="quantity" class="quantity" value="1" min="1">
+                        <button type="button" class="increase-btn">+</button>
+                    </div>
+                    <input type="hidden" name="product_name" value="Кола"> <!-- невидимые данные-->
+                    <input type="hidden" name="product_price" value="170"> <!-- невидимые данные-->
+                    <button type="submit" class="add-to-cart-btn">Добавить в корзину</button>
+                </form>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-placeholder"></div>
+            <div class="details">
+                <h2>Сок</h2>
+                <p>45</p>
+                <p>Популярность</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-placeholder"></div>
+            <div class="details">
+                <h2>Кофе</h2>
+                <p>150</p>
+                <p>Популярность</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-placeholder"></div>
+            <div class="details">
+                <h2>Чай</h2>
+                <p>100</p>
+                <p>Популярность</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
