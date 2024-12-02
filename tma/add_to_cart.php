@@ -1,5 +1,5 @@
 <?php
-$servername = "tma";
+$servername = "tmareg";
 $username = "root";
 $password = "";
 $dbname = "tma";

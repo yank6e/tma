@@ -46,6 +46,21 @@
     </div>
     <main>
         <div class="card">
+            <div class="image-placeholder"><img src="img/kola.png" height="164" width="150"></div>
+            <div class="details">
+                <h2>Кола</h2>
+                <p>170</p>
+                <!-- часть работы с сервером -->
+                <form action="add_to_cart.php" method="POST">
+                    <div class="quantity-control">
+                        <button type="button" class="decrease-btn">-</button>
+                        <input type="number" name="quantity" class="quantity" value="1" min="1">
+                        <button type="button" class="increase-btn">+</button>
+                    </div>
+                    <input type="hidden" name="product_name" value="Кола"> <!-- невидимые данные-->
+                    <input type="hidden" name="product_price" value="170"> <!-- невидимые данные-->
+                </form>
+            </div>
         </div>
     </main>
     <script src="js/script.js"></script>

@@ -71,6 +71,7 @@ a:hover {
 
 .card {
     display: flex;
+    height: 164px;
     background-color: #07e0e0;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -78,8 +79,8 @@ a:hover {
 }
 
 .image-placeholder {
-    width: 100px;
-    height: 106.3px;
+    width: 150px;
+    height: 100%;
     background-color: white;
     border-right: 1px solid #fff;
 }
@@ -159,9 +160,12 @@ a:hover {
 }
 
 .quantity-control {
+    margin-top: 5px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    height: 25px;
+    justify-content: flex-end;
 }
 
 .quantity-control button {
@@ -181,11 +185,12 @@ a:hover {
 }
 
 .add-to-cart-btn {
-    background-color: #07e0e0;
+    background-color: black;
     border: none;
     color: white;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    float: right;
 }
 

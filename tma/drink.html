@@ -51,11 +51,16 @@
     </div>
     <main>
         <div class="card">
-            <div class="image-placeholder"></div>
+            <div class="image-placeholder"><img src="img/kola.png" height="164" width="150"></div>
             <div class="details">
                 <h2>Кола</h2>
                 <p>170</p>
-                <p>Популярность</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
                 <!-- часть работы с сервером -->
                 <form action="add_to_cart.php" method="POST">
                     <div class="quantity-control">
@@ -65,14 +70,9 @@
                     </div>
                     <input type="hidden" name="product_name" value="Кола"> <!-- невидимые данные-->
                     <input type="hidden" name="product_price" value="170"> <!-- невидимые данные-->
-                    <button type="submit" class="add-to-cart-btn">Добавить в корзину</button>
+                    <button type="submit" class="add-to-cart-btn">В корзину</button>
                 </form>
-                <div class="rating">
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9734;</span>
-                    <span class="star">&#9734;</span>
-                </div>
+                
             </div>
         </div>
         <div class="card">
