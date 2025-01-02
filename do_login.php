@@ -26,7 +26,7 @@ if (password_verify($_POST['password'], $user['password'])) {
         ]);
     }
     $_SESSION['user_id'] = $user['id'];
-    header('Location: tma/index.html');
+    header('Location: tma/index.php');
     die;
 }
 
